@@ -1,0 +1,125 @@
+/**NAV_BAR**/
+header img {
+    height: 80px;
+    margin-left: 40px;
+}
+
+
+main {
+    color: white;
+    font-size: 25px;
+}
+.Btn{
+    padding: 10px 20px;
+    background-color: rgb(190, 19, 19);
+    border: 0px;
+    color: #fff;
+    transition: 0.25s linear;
+}
+.Btn:hover{
+    background-color: rgb(255, 35, 35);
+    border: 1px solid #ff3737;
+    color: hsl(210, 100%, 99%);
+    }
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*** body***/
+
+
+* {box-sizing: border-box;}
+body {
+    font-family: Verdana, sans-serif;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+    /*background-size: cover;*/
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin: auto;
+    background-size: cover;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
